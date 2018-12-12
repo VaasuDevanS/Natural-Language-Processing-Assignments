@@ -177,7 +177,7 @@ class InterpolatedModel(Model):
         biGram = math.log(biGram)
 
         # Interpolated-Model implementing both Unigram and Bigram
-        prob = ((1-self.lmbda)*biGram) + (self.lmbda*uniGram)
+        prob = math.log(((1-self.lmbda)*math.exp(biGram)) + (self.lmbda*math.exp(uniGram)))
         return prob
 
     def test(self, infile):
