@@ -207,6 +207,18 @@ class BinarizedNaiveBayes(NaiveBayes):
         for cls,bin_tokens in self.cls_tokens.iteritems():
             self.cls_counter[cls] = Counter(bin_tokens)
             self.N_cls[cls] = len(bin_tokens)
+        
+        def predict_class(self, sent):
+        Prob = {}
+        for cls,counter in self.cls_counter.iteritems():
+            Prob[cls] = 0
+            for token in set(self.tokenize(sent)):
+                if token not in self.types:
+                    continue
+                t_count = counter[token]
+                Prob[cls] += math.log((t_count+1)/(self.N_cls[cls]+self.V))
+            Prob[cls] += math.log(self.counts[cls]/self.total)
+        return max(Prob, key=lambda k: Prob[k])
 
 
 if __name__ == '__main__':
