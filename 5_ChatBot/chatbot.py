@@ -134,7 +134,8 @@ class W2V(Chatbot):
 if __name__ == "__main__":
 
     # python chatbot.py METHOD
-    responses, vectors = ("tweets-en-filtered-sample.txt", "cc.en.300.vec.10k")
+    responses, vectors = ("Data/tweets-en-filtered-sample.txt",
+                          "Data/cc.en.300.vec.10k")
 
     if arg[1] == "both":
         # Initialize both the bots
