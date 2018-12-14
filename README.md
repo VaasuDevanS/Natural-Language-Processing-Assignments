@@ -2,7 +2,8 @@
 UNB Fall-2018 CS6765
 
 This Repository contains the python code for the Fall Term Assignments.  
-No usage of Numpy in any of the code and developed using Python2.7 (built-in modules)
+No usage of numpy/nltk in any of the code and developed using Python2.7 (built-in modules)
+sklearn is used only in Assignment3 for Logistic Regression
 
 ## Getting started
 
@@ -41,7 +42,7 @@ METHOD
 Assignment 4: - 
 METHOD 
 * <b>baseline</b> represents <b>Most-Frequent-Tag-Baseline</b>
-* <b>2</b> represents <b>Hidden Markov Model (with add-k smoothing) and Viterbi Algorithm</b>
+* <b>2</b> represents <b>Hidden Markov Model (Bigram with add-k smoothing) and Viterbi Algorithm</b>
 
 Assignment 5: - 
 METHOD  
