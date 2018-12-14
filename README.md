@@ -2,7 +2,7 @@
 UNB Fall-2018 CS6765
 
 This Repository contains the python code for the Fall Term Assignments.  
-No usage of numpy/nltk in any of the code and developed using Python2.7 (built-in modules)
+No usage of numpy/nltk in any of the code and developed using Python2.7 (built-in modules)  
 sklearn is used only in Assignment3 for Logistic Regression
 
 ## Getting started
